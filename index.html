@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumus Segitiga</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
+ </head>
+ <body>
+    <header id="navigation-bar" class="navigation-bar-class">
+        <h3 id="logo">Naja Math x RevoU</h3>
+        <nav class="navigation">
+            <a id="btn-luas" style="color: black;">Luas Segitiga</a>
+            <a id="btn-keliling">Keliling Segitiga</a>
+        </nav>
+    </header>
+    <section class="input-luas-section" id="luaspage">
+        <h1 class="judul-luas">Hitung Luas Segitiga</h1>
+        <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/Rumus%20Luas%20Segitiga%20Jika%20Diketahui%20Alas%20dan%20Tinggi%20-%20Matematika%20Kelas%207.png">
+        <a class="source-img">Source : ruangguru.com</a>
+        
+        <label for="input-alas" id="input-alas-id">Alas (BC)</label>
+        <input type="number" id="input-alas" class="inputdata">
+        <label for="input-tinggi" id="input-tinggi-id">Tinggi (AO)</label>
+        <input type="number" id="input-tinggi" class="inputdata">
+        
+        <div class="buttons">
+            <button class="hitung" onclick="hitungLuas()">Hitung</button>
+            <button class="reset" onclick="resetForm()">Reset</button>
+        </div>
+        <br>
+        <br>
+        <div class="hasil" id="hasil-luas"></div>
+    </section>
+
+    <section class="input-luas-section" id="kelilingpage">
+        <h1 class="judul-luas">Hitung Keliling Segitiga</h1>
+        <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/Rumus%20Keliling%20Segitiga%20-%20Matematika%20Kelas%207.png">
+        <a class="source-img">Source : ruangguru.com</a>
+        
+        <label for="input-sisi-1" id="input-sisi1-id">Sisi AB</label>
+        <input type="number" id="input-ab" class="inputdata">
+        <label for="input-sisi-2" id="input-sisi2-id">Sisi BC</label>
+        <input type="number" id="input-bc" class="inputdata">
+        <label for="input-sisi-3" id="input-sisi3-id">Sisi CA</label>
+        <input type="number" id="input-ca" class="inputdata">
+        
+        <div class="buttons">
+            <button class="hitung" onclick="hitungKeliling()">Hitung</button>
+            <button class="reset" onclick="resetKeliling()">Reset</button>
+        </div>
+        <br>
+        <br>
+        <div class="hasil" id="hasil-keliling"></div>
+    </section>
+ </body>
+ </html>
